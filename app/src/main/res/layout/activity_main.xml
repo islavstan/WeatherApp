@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="#82B1FF"
+    tools:context="com.islavdroid.weatherapp.MainActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFFFF"
+    android:layout_margin="16dp"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:id="@+id/city"
+    android:text="Кривой Рог, Украина"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/city"
+        android:background="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempurature"
+        android:text="20"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wind"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tempurature"
+        android:text="wind"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloud"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wind"
+        android:text="cloud"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressure"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cloud"
+        android:text="pressure"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/humid"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/pressure"
+    android:text="humid"
+    android:layout_marginTop="10dp"
+    android:textSize="16sp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold" />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rise"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/humid"
+    android:text="rise"
+    android:layout_marginTop="10dp"
+    android:textSize="16sp"
+    android:textColor="#FFFFFF"
+    android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rise"
+        android:text="sunset"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sunset"
+        android:text="last update"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="сменить город"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_update"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="37dp"
+        android:id="@+id/change_city" />
+
+</RelativeLayout>
