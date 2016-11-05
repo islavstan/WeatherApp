@@ -135,8 +135,9 @@ public class MainActivity extends AppCompatActivity {
                 if(changeCity.getText().toString().equals("")){
                     Toast.makeText(getApplicationContext(),"Поле не может быть пустым",Toast.LENGTH_LONG).show();
                 }else{
+
                 cityPreference.setCity(changeCity.getText().toString());
-                String newCity =cityPreference.getCity();
+                    String newCity = cityPreference.getCity().replace(" ", "");
                 renderWeatherData(newCity);}
             }
         });
