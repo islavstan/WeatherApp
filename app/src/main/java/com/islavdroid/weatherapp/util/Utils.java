@@ -5,8 +5,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Utils {
-    public static final String BASE_URL = "api.openweathermap.org/data/2.5/weather?q=";
-    public static final String ICON_URL = "api.openweathermap.org/img/w/";
+
+    //http://api.openweathermap.org/data/2.5/weather?q=London&appid=7f2a3f4038008c167d48a29dea4c2d7b
+    public static final String BASE_URL = "http://api.openweathermap.org/data/2.5/weather?q=";
+    public static final String ICON_URL = "http://api.openweathermap.org/img/w/";
+    public static final String ID = "&appid=7f2a3f4038008c167d48a29dea4c2d7b";
 
    public static JSONObject getObject(String tagName,JSONObject jsonObject) throws JSONException{
        //получаем JSONObject value по введённому имени
